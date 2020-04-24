@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>尚书网</title>
+    <link href="__STATIC__/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" >
+    <style type="text/css">
+    #h{
+      background: url(images/header.png) no-repeat center top;
+    }
+    #denglu_div{
+    background: url(images/3.jpg) no-repeat center top;
+   }
+   
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h style="font-size: 18px;color: red;">{$Request.session.user}</h>&nbsp;&nbsp;&nbsp;
+        <a href="./login.html">注册</a>
+        <a href="javascript:;" id="denglu" >登录</a>
+       <!--  <a href="./denglu.html" >登录</a> -->
+    </div>
+    <div id="denglu_div">
+      <div class="col-md-6 col-md-offset-3 deng">
+        <h2>
+          欢迎登录！
+        </h2>
+        <hr>
+          <form action="land" method="post">
+          <b>用户名：</b><input type="text" id="user" required placeholder="用户名" name="user">
+          <br>
+          <br>
+          <b>密&nbsp;&nbsp;&nbsp;&nbsp;码：</b><input type="password" id="pwd" required placeholder="输入你的密码" name="pwd">
+          <br>
+          <br>
+          <input type="submit" id="tijiao" class="btn btn-success" value="登录" name="submit">
+          <input type="reset" id="cz" class="btn btn-success niu" value="重置" name="reset">
+          </form>
+      </div>
+    </div>
+        <div id="h">
+              <h1>尚书网</h1>
+              <hr class="aligncenter">
+              <h3>看书购书，请到尚书网</h3>
+        </div>
+      
+        <div id="g">
+              <div class="centered">
+                <h4>Our Book Is Here
+                  <br>
+                    本周推荐
+                </h4>  
+                <div style="height: 20px"></div>
+                {volist name='book' id='book'}
+                  <div>
+                    <div style="float: left;width: 30% ;margin: 2px 1%">
+                      <a href="{:url('subpage?id='.$book->getData('id'))}">
+                        <img src="{$book->getData('pic')}">
+                      </a>
+                      <i class="ion-clipboard"></i>
+                    </div>
+                  </div>
+                {/volist}
+
+                    <!-- <div class="col-md-4">
+                      <a href="{:url('subpage?id='.$book->getData('id'))}"><img src="{$book->getData('pic')}"></a>
+                      <i class="ion-clipboard"></i>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="{:url('subpage?id='.$book->getData('id'))}"><img src="images/1.jpg"></a>
+                      <i class="ion-clipboard"></i>
+                    </div>
+                  </div>
+                  {/volist}
+                  <hr>
+                  {volist name='book' id='book'}
+                  <div class="row mt centered">
+                      <div class="col-md-4">
+                        <a href="{:url('subpage?id='.$book->getData('id'))}"><img src="images/1.jpg"></a>
+                        <i class="ion-clipboard"></i>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="{:url('subpage?id='.$book->getData('id'))}"><img src="images/1.jpg"></a>
+                        <i class="ion-clipboard"></i>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="{:url('subpage?id='.$book->getData('id'))}"><img src="images/1.jpg"></a>
+                        <i class="ion-clipboard"></i>
+                      </div>
+                    </div>
+                    {/volist}
+                  <hr>
+                  {volist name='book' id='book'}
+                  <div class="row mt centered">
+                      <div class="col-md-4">
+                        <a href="{:url('subpage?id='.$book->getData('id'))}"><img src="images/1.jpg"></a>
+                        <i class="ion-clipboard"></i>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="{:url('subpage?id='.$book->getData('id'))}"><img src="images/1.jpg"></a>
+                        <i class="ion-clipboard"></i>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="{:url('subpage?id='.$book->getData('id'))}"><img src="images/1.jpg"></a>
+                        <i class="ion-clipboard"></i>
+                      </div>
+                    </div> -->
+          </div>         
+        </div>
+        <div style="clear: both;"></div>
+        <div id="copyrights">
+            <p>
+              &copy; &nbsp;解释权归 <a>尚书网</a> 所有&nbsp; Nice 
+            </p>
+        </div>
+      
+      
+      </body>
+      <script>
+       window.onload=function(){
+        function my$(id) {
+                return document.getElementById(id);
+            }
+            my$("denglu_div").style.display="none";
+            my$("denglu").onclick=function(){
+                if(my$("denglu_div").style.display!="none"){
+                    my$("denglu_div").style.display="none"
+                }else{
+                    my$("denglu_div").style.display="block"
+                }
+            };
+
+       };
+      </script>
+</html>

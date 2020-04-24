@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>欢迎来到尚书网注册页面</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="__STATIC__/css/bootstrap.css" rel="stylesheet">
+    <link href="__STATIC__/css/fontawesome-all.css" rel="stylesheet">
+    <link href="__STATIC__/css/swiper.css" rel="stylesheet">
+    <link href="__STATIC__/css/magnific-popup.css" rel="stylesheet">
+    <link href="__STATIC__/css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+    <style type="text/css">
+    select {
+      background-image: url('images/down-arrow.png');
+
+    }
+    a.back-to-top {
+    background: #4f3cda url("images/up-arrow.png") no-repeat center 47%;
+    }
+    .ex-2-header {
+    background: url(images/ad.jpg) no-repeat top center;
+    }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top ">
+    
+  
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+            
+            
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="denglu.html">尚书网登陆 <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="admin_login.html">管理员登陆</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    <!-- Header -->
+    <header id="header" class="ex-2-header bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>登录</h1>
+                   <p>还未注册，<a class="white" href="admin_land.html">前往注册</a></p> 
+                    <!-- Sign Up Form -->
+                    <div class="form-container">
+                        <form id="logInForm" data-toggle="validator" data-focus="false" action="admin_ln" method="post">
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="lemail" name="email" required>
+                                <label class="label-control" for="lemail">邮箱</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control-input" id="lpassword" name="pwd" required>
+                                <label class="label-control" for="lpassword">密码</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="form-control-submit-button" value="登陆">
+                            </div>
+                            <div class="form-message">
+                                <div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                  
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+
+
+
+    <!-- Scripts -->
+    <script src="__js__/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="__js__/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="__js__/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="__js__/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="__js__/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="__js__/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="__js__/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="__js__/js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

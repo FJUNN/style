@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>无标题文档</title>
+        <style type="text/css">
+            #d1 {
+                background-color: #F00;
+                height: 200px;
+                width: 900px;
+            }
+            #d2 {
+                background-color: #0CC;
+                float: left;
+                height: 400px;
+                width: 200px;
+            }
+            #d3 {
+                background-color: #FCC;
+                float: left;
+                height: 400px;
+                width: 700px;
+				text-align:left;
+            }
+            #d4 {
+                background-color: #F9F;
+                clear: both;
+                height: 150px;
+                width: 900px;
+            }
+            #d0 {
+                background-color: #CFF;
+                height: 750px;
+                width: 900px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        </style>
+    </head>
+
+    <body bgcolor="#E42323">
+        <center>
+          <div id="d0">
+                <div id="d1">此处显示  id "d1" 的内容</div>
+                <div id="d2">此处显示  id "d2" 的内容</div>
+                <div id="d3">
+                <h1>教师信息添加</h1>
+                <form action="insert" method="post">
+                <p>姓 名：
+                  <input type="text" name="xm" id="textfield" />
+                </p>
+                <p>用户名：
+                  <input type="text" name="yym" id="textfield2" />
+                </p>
+                <p>性别：
+                  <label>
+                    <input type="radio" name="sex" value="0" id="RadioGroup1_0" />
+                    男
+                  </label>
+                  <label>
+                    <input type="radio" name="sex" value="1" id="RadioGroup1_1" />
+                  女</label>
+                  <br />
+                </p>
+                <p>邮箱：
+                  <input type="text" name="yx" id="textfield3" />
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                  <input type="submit" name="button" id="button" value="提交" />
+                  <input type="reset" name="button2" id="button2" value="重置" />
+                </p>
+                </form>
+
+
+
+                </div>
+                <div id="d4">
+
+                    测试结果：接收控制器发送过来的数据$teachers,数据如下：
+
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>无标题文档</title>
+        <style type="text/css">
+            li{
+                float:left;
+            }
+            #d1 {
+                background-color: #56ff16;
+                height: 200px;
+                width: 900px;
+            }
+            #d2 {
+                background-color: #0CC;
+                float: left;
+                height: 400px;
+                width: 200px;
+            }
+            #d3 {
+                background-color: #FCC;
+                float: left;
+                height: 400px;
+                width: 700px;
+            }
+            #d4 {
+                background-color: #F9F;
+                clear: both;
+                height: 150px;
+                width: 900px;
+            }
+            #d0 {
+                background-color: #CFF;
+                height: 750px;
+                width: 900px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <div id="d0">
+                <div id="d1">
+                此处显示  id "d1" 的内容
+
+                <form action="search" method="get" >
+
+                <input type="text"  name="cx" />
+                <input type="submit" name="tj" value="查询">
+
+                </form>
+
+
+
+
+
+                </div>
+                <div id="d2">此处显示  id "d2" 的内容</div>
+                <div id="d3">
+
+                    <table  width="700"  height="400"  border="1">
+
+                        <thead>
+                            <tr height="50" bgcolor="yellow">
+                                <td>姓名</td>
+                                <td>性别</td>
+                                <td>邮箱</td>
+                                <td>用户名</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            {volist name="teacherss" id="teacher"}
+                            <tr height="40px">
+                                <td>{$teacher->getData("name")}</td>
+                                <td>{eq name='teacher->getData("sex")' value='0'}男{else/}女{/eq}   </td>
+                                <td>{$teacher->getData("username")}</td>
+                                <td>{$teacher->getData("email")}</td>
+                                <td>
+
+                                <a href="{:url('edit?id='.$teacher->getData('id'))}  ">编辑</a>
+
+                                <a href="{:url('delete?id='.$teacher->getData('id'))}  ">删除</a></td>
+                            </tr>
+
+                            {/volist}
+                        </tbody>
+                    </table>
+
+
+
+
+
+
+                </div>
+                <div id="d4">
+                    分页：{$teacherss->render()}
+                    测试结果：接收控制器发送过来的数据$teachers,数据如下：
+
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </center>
+    </body>
+</html>
