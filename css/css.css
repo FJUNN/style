@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#d0{
+	width: 960px;
+	background: #F5F5DC;
+	margin: 0 auto;
+}
+.logo{
+	height: 80px;
+}
+.logo_left{
+	width: 20px;
+	height: 80px;
+	float: left;
+}
+.list{
+	height: 20px;
+	text-align: center;
+}
+.list a{
+	width: 133px;
+	height: 30px;
+	display: inline-block;
+	background-color: #666;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	line-height: 30px;
+}
+.list a:hover{
+	background-color: #333;
+}
+
+.lunbo{
+	width: 960px;
+	height: 400px;
+	margin: 20px auto;
+	overflow: hidden;
+	position: relative;
+}
+ul,li {
+	list-style: none;
+}
+.lunbo_box_1 ul li{
+	width: 960px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+.lunbo_box_1 ul li img{
+	display:block;
+	width: 960px; 
+	height: 400px;
+}
+.lunbo_box_1 ul li h2{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 40px;
+	width:360px;
+	background: rgba(125,125,120,.4);
+	text-indent: 2em;
+	padding-right:600px ;
+	font-size: 15px;
+	line-height: 40px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: normal;
+	color:#fff;
+}
+.lunbo_box_2{
+	position: absolute;
+	right: 10px;
+	bottom: 14px;
+}
+.lunbo_box_2 ul li{
+	float:left;
+	width: 12px;
+	height: 12px;
+	overflow: hidden;
+	margin: 0 5px; 
+	border-radius: 50%;
+	background: rgba(0,0,0,0.5);
+	text-indent: 100px;
+	cursor: pointer;
+}
+.lunbo_box_2 ul .on{
+	background: rgba(255,255,255,0.6);
+}
+.lunbo_box_3 span{
+	position: absolute;
+	color: white;
+	background: rgba(125,125,120,.3);
+	width: 50px;
+	height: 80px;
+	top:50%; 
+	font-family: "宋体";
+	line-height: 80px;
+	font-size:60px;
+	margin-top: -40px;
+	text-align: center;
+	cursor: pointer;
+}
+.lunbo_box_3 .prev{
+	left: 10px;
+}
+.lunbo_box_3 .next{
+	right: 10px;
+}
+.lunbo_box_3 span::selection{
+	background: transparent;
+}
+.lunbo_box_3 span:hover{
+	background: rgba(125,125,120,.8);
+}
+
+.news_left{
+	width: 300px;
+	height: 300px;
+	border: solid 1px #666;
+	background-image: url(images/logo4.jpg);
+	float: left;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	width: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	zoom:1;
+}
+.news_left ul{
+	padding-top:5px;
+}
+.news_left ul li{
+	height: 20px;
+	line-height: 20px;
+}
+.news_left ul li a{
+	color: #000;
+	width: 350px;
+	white-space: nowrap;
+	overflow:hidden;
+	text-decoration: none;
+}
+.news_left ul li a:hover{
+	color: #fe0000;
+}
+.news_left ul li span{
+	color: #646464;
+	float: right;
+}
+.news_left_logo{
+	margin: auto 1px;
+	width: 280px;
+	height: 50px;
+}
+.news_left .float_a{
+	float: right;
+	text-decoration: none;
+	color: #666;
+}
+.news_left a:hover{
+	color: #fe0000;
+}
+
+.news_right{
+	width: 650px;
+	height: 300px;
+	border: solid 1px #666;
+	background: url(images/logo5.jpg);
+	background-size: 100%;
+	float: right;
+}
+.news_right ul{
+	padding-top:5px;
+}
+.news_right ul li{
+	height: 20px;
+	line-height: 20px;
+}
+.news_right ul li a{
+	color: #000;
+	width: 350px;
+	white-space: nowrap;
+	overflow:hidden;
+	text-decoration: none;
+}
+.news_right ul li a:hover{
+	color: #fe0000;
+}
+.news_right ul li span{
+	color: #646464;
+	float: right;
+}
+.news_right_logo{
+	margin: auto 1px;
+	width: 280px;
+	height: 50px;
+}
+.news_right .float_a{
+	float: right;
+	text-decoration: none;
+	color: #666;
+}
+.news_right a:hover{
+	color: #fe0000;
+}
+.menu{
+	height: 50px;
+	clear: both;
+	font-family: "华文彩云";
+	color: #3ea2ab;
+	font-size: 40px;
+	line-height: 65px;
+	margin: 0px 10px;
+}
+.menu a{
+	text-decoration: none;
+}
+.menu a:visited{
+	color: #3ea2ab;
+}
+.menu_shop{
+	margin: 0 auto;
+}
+.menu_shop table tr{
+	text-align: center;
+}
+.menu_shop table tr td img{
+	width: 220px;
+	border: solid 1px #666;
+	margin: 10px 8px;
+}
+.menu_shop table tr td a{
+	text-decoration: none;
+	color: #333;
+}
+.menu_shop table tr td a:hover{
+	color: #fe0000;
+}
+#d1{
+	margin: 12px auto;
+	margin-left: 255px;
+}
+#d1 a{
+	text-decoration: none;
+	color: #333;
+	font-size: 13px;
+	line-height: 25px;
+}
+#d1 a:hover{
+	color: #fe0000;
+}
