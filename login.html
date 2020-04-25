@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link href="./css/login.css" type="text/CSS" rel="stylesheet">
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+    <div id="body">
+        <span class="anniu" id="email">邮箱注册</span>
+        <span class="anniu" id="phone">手机注册</span>
+    </br>
+        <div id="email_login">
+            <h3>邮箱验证</h3>
+        <form action="./php/email.php" name="formset" method="post" enctype="multipart/form-data">
+           邮箱:<input  type="email" name="email" required><br/>
+           <br/>
+            <br/>
+            <br/>
+         <!--    *兴趣标签：<input type="checkbox" name="xq" value="新闻">新闻
+                    <input type="checkbox" name="xq" value="摄影">摄影
+                    <input type="checkbox" name="xq" value="文化">文化
+                    <input type="checkbox" name="xq" value="旅游">旅游
+                    <input type="checkbox" name="xq" value="美食">美食
+                    <input type="checkbox" name="xq" value="电影">电影
+                    <input type="checkbox" name="xq" value="体育">体育
+                    <input type="checkbox" name="xq" value="IT">IT
+                    <input type="checkbox" name="xq" value="财经">财经
+                    <input type="checkbox" name="xq" value="时尚">时尚
+                    <input type="checkbox" name="xq" value="生活">生活
+                    <input type="checkbox" name="xq" value="军事">军事
+                    <br/> -->
+           <!--  &nbsp;&nbsp;&nbsp;&nbsp;*验证码：<input type="text" style="width: 60px;" required>
+                        <a href="./php/resigna.php" class="yzm"> 重新发送邮箱验证码</a><br/> -->
+                    <input type="submit" class="btn btn-primary ljzc" οnclick="F_submit()" value="邮箱验证"></input><br>
+        </form>
+                    <a href="#">新浪网络服务使用协议</a><br>
+                    <a href="#">新浪个人信息保护政策</a>
+        </div>
+        <div id="phone_login">
+            <h3>手机注册</h3>
+            <form action="./php/resign.php" method="post">
+            *手机号码：<input type="tel" name="tel" required><br/>
+            *设置密码：<input type="password" name="pwd" required><br/>
+            <!-- *兴趣标签：<input type="checkbox" name="xq" value="新闻">新闻
+                    <input type="checkbox" name="xq" value="摄影">摄影
+                    <input type="checkbox" name="xq" value="文化">文化
+                    <input type="checkbox" name="xq" value="旅游">旅游
+                    <input type="checkbox" name="xq" value="美食">美食
+                    <input type="checkbox" name="xq" value="电影">电影
+                    <input type="checkbox" name="xq" value="体育">体育
+                    <input type="checkbox" name="xq" value="IT">IT
+                    <input type="checkbox" name="xq" value="财经">财经
+                    <input type="checkbox" name="xq" value="时尚">时尚
+                    <input type="checkbox" name="xq" value="生活">生活
+                    <input type="checkbox" name="xq" value="军事">军事
+                    <br/> -->
+            *手机验证码：<input type="text" style="width: 60px;" required>
+                       <button> 重新发送</button><br>
+                    <input type="submit" value="立即注册" class="ljzc"><br>
+                    </form>
+                    <a href="#">新浪网络服务使用协议</a><br>
+                    <a href="#">新浪个人信息保护政策</a>
+        </div>
+    </div>
+</body>
+</html>
